@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Churn Rate</title>
+    </head>
+    <body>
+    <h1 align ="center">Churn rate calculation</h1>
+    <h2 align="center">Asnin Libin(26004114)</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label>Customers Lost Count=</label>
+        <input type="text" name="CustLost" value="{{CL}}"><br><br>
+        <label>Initial Customers Count=</label>
+        <input type="text" name="Initcust" value="{{IC}}"><br><br>
+        <input  type="submit" value="calculate"><br><br>
+        <label>Churn Rate=</label> 
+        <input type="text" name="ChurnRate" value="{{CR}}"><br><br>
+    </form>
+    </body>
+</html>
